@@ -4,6 +4,8 @@
 
 1. Além do PortScan, quais são as 5 ferramentas mais úteis para reconhecimento em um pentest?
 
+- skám´pdm
+
 2. Qual a diferença entre um scanner de portas SYN e um TCP Connect Scan?
 
 3. Como um pentester pode evitar ser detectado por sistemas de prevenção de intrusão (IPS) durante o reconhecimento?
@@ -90,3 +92,18 @@ Siga o menu interativo e selecione a ferramenta desejada. As entradas são feita
 
 ### Scan de Vulnerabilidade (Nmap)
 
+```
+Digite o IP ou domínio para scan de vulnerabilidades: 127.0.0.1
+
+===== RESULTADO SCAN DE VULNERABILIDADES =====
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-04-28 13:28 EDT
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000010s latency).
+All 1000 scanned ports on localhost (127.0.0.1) are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 10.45 seconds
+
+==============================================
+```
