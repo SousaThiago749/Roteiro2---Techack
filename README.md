@@ -4,11 +4,18 @@
 
 1. Além do PortScan, quais são as 5 ferramentas mais úteis para reconhecimento em um pentest?
 
-- skám´pdm
+- WHOIS, DNS Enumeration, Subdomain Scanner, Nmap, Wireshark
 
 2. Qual a diferença entre um scanner de portas SYN e um TCP Connect Scan?
 
+- O TCP Connect, realiza uma conexão completa com a porta alvo. Como depende da pilha TCP do sistema operacional, é mais fácil de detectar por firewalls e logs.
+
+- O SYN, envia apenas o pacote SYN e aguarda a resposta. Se receber um SYN-ACK, a porta está aberta, então envia um RST para evitar completar a conexão. É mais rapido e discreto, pois não finaliza a conexão, ideal para pentests discretos.
+
+
 3. Como um pentester pode evitar ser detectado por sistemas de prevenção de intrusão (IPS) durante o reconhecimento?
+
+- Como falado anteriormente, um dos metodos para evitar ser detectado é utilizando o SYN, como ele não finaliza a conexão, fica muito mais dificil detectar um pentester. Outro meio bastante utilizado é a fragmentação de pacotes, ou seja, pegar o pacote completo e dividir em pacotes menores, isso faz com que fique mais dificil de reconhecer por um sistema. 
 
 ---
 
